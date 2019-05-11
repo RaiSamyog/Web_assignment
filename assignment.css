@@ -1,51 +1,46 @@
-html{
+html{	/*giving the whole site a color and border*/
 	margin: 10px;
 	border: 2px solid black;	
-	background :#c4d99c
+	background :#c4d99c 
 }
 header{
 	width:100%;
 	font-size: 40px;
 	padding:10px 1px;
 	text-align: center;
-	background: #b19cd9
+	background: #b19cd9/*setting a color*/
 
 }
 body{
-	background: white;
+	background: white;/*making a larger white portion*/
 }
 section{
 	font-style: italic;
 }
-.nav{
+.nav{	/*making the contents in .nav position row wise*/
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	padding: 10px 1px;
 	background:#c4d99c;
 }	
-.button{
+.button{/*giving the buttons color,background and dimensions*/
 	width:20%;
-	height: 50px; background-color: white;color: black;border: none;"
+	height: 50px; 
+	background-color: white;
+	color: black;
+	border: none;"
 }
-.intro{
+.intro{/*keeping the classes' position comumn wise*/
 	display: flex;
 	display: column;
-	font-size: 20px;
-	
-}
-.intro1{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	background: white;
-	padding: 10px 15px 10px 10px;
+	font-size: 30px;
+	text-align: center;
 }
 .left1{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	text-align: justify;
 	padding: 10px;
 	justify-content: space-around;
 }
@@ -53,48 +48,40 @@ section{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	text-align: justify;
 	padding: 10px;
 	justify-content: space-around;
-}
-.intro2{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	background: white;
-	padding: 10px 10px 10px 15px;
 }
 .left2{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	text-align: justify;
 	padding: 10px;
 }
 .right2{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	text-align: justify;
 	padding: 10px;
 }
-footer{
+footer{/*styling the footer*/
 	width: 100%;
+	text-align: center;
+	font-style: italic; 
+	background: #b19cd9;
+	padding:10px 1px;
 }
-@media screen and (max-width: 450px){
-	.nav{flex-direction:column}
+@media screen and (max-width: 450px){ /*making the website mobile responsive*/
+	.nav{flex-direction:column}/*till max height the, .nav class will have a column flex direction*/
 	.button{width: 100%;}
-	.intro{flex-direction:column;}
-	.intro1{ flex-direction: column;width:90%;order:1;}
-	.intro2{flex-direction: column; width:90%;order:2;}
-	.left1{width: 100%;}
-	.right1{width: 100%;}
-	.left2{width: 100%;}
-	.right2{width: 100%;}
+	.intro{flex-direction:column;justify-content: space-around;}/*till max height, .intro class will have column flex direction*/
+	.left1{width: 95%;}
+	.right1{width: 95%;}
+	.left2{width: 95%;}
+	.right2{width: 95%;}
 
 
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px){ /*making tablet respomsive*/
 	.nav{flex-direction:column}
 	.button{width: 100%;}
 	.intro{flex-direction:column;}
@@ -124,6 +111,7 @@ footer{
 	flex-direction: row;
 	text-align: justify;
 	font-size: 20px;
+	width: 100%;
 }
 @media screen and (max-width: 450px){
 	.f{flex-direction: column;}
@@ -144,3 +132,27 @@ footer{
 	width: 100%;
 	justify-content: space-around;
 }
+.job{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	align-self: center;
+}
+.job1{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.job2{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+@media screen and (max-width: 450px){
+	.link1{width: 50%;order: 1;}
+	.link2{width: 50%;order:2;}
+}
+
