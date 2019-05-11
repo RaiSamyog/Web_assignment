@@ -14,6 +14,9 @@ header{
 body{
 	background: white;
 }
+section{
+	font-style: italic;
+}
 .nav{
 	display: flex;
 	flex-direction: row;
@@ -44,6 +47,7 @@ body{
 	width: 50%;
 	text-align: justify;
 	padding: 10px;
+	justify-content: space-around;
 }
 .right1{
 	display: flex;
@@ -51,6 +55,7 @@ body{
 	width: 50%;
 	text-align: justify;
 	padding: 10px;
+	justify-content: space-around;
 }
 .intro2{
 	display: flex;
@@ -76,6 +81,32 @@ body{
 footer{
 	width: 100%;
 }
+@media screen and (max-width: 450px){
+	.nav{flex-direction:column}
+	.button{width: 100%;}
+	.intro{flex-direction:column;}
+	.intro1{ flex-direction: column;width:90%;order:1;}
+	.intro2{flex-direction: column; width:90%;order:2;}
+	.left1{width: 100%;}
+	.right1{width: 100%;}
+	.left2{width: 100%;}
+	.right2{width: 100%;}
+
+
+}
+@media screen and (max-width:1024px){
+	.nav{flex-direction:column}
+	.button{width: 100%;}
+	.intro{flex-direction:column;}
+	.intro1{ flex-direction: column;width:95%;}
+	.intro2{flex-direction: column; width:95%;}
+	.left1{width: 100%;order:1;padding:}
+	.right1{width: 100%;order:3;padding:}
+	.left2{width: 100%;order:2;padding:}
+	.right2{width: 100%;order:4;padding:}
+}
+
+
 .left{
 	display: flex;
 	flex-direction: column;
@@ -93,4 +124,23 @@ footer{
 	flex-direction: row;
 	text-align: justify;
 	font-size: 20px;
+}
+@media screen and (max-width: 450px){
+	.f{flex-direction: column;}
+	.revleft1{ width: 100%; order: 1;}
+	.revleft2{width: 100%;order: 2;}
+}
+@media screen and (max-width: 1024px){
+	.f{flex-direction: column;}
+}
+.content {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+.sec{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
 }
