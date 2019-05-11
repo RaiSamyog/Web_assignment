@@ -11,14 +11,19 @@ header{
 	background: #b19cd9
 
 }
+body{
+	background: white;
+}
 .nav{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	padding: 10px 1px;
+	background:#c4d99c;
 }	
-.nav .button{
+.button{
 	width:20%;
+	height: 50px; background-color: white;color: black;border: none;"
 }
 .intro{
 	display: flex;
@@ -67,4 +72,25 @@ header{
 	width: 50%;
 	text-align: justify;
 	padding: 10px;
+}
+footer{
+	width: 100%;
+}
+.left{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10px 15px 10px 10px;
+}
+.right{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10px 10px 10px 15px;
+}
+.f{
+	display: flex;
+	flex-direction: row;
+	text-align: justify;
+	font-size: 20px;
 }
