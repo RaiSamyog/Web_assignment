@@ -29,11 +29,11 @@ section{
 	height: 50px; 
 	background-color: white;
 	color: black;
-	border: none;"
+	border: none;
 }
 .intro{/*keeping the classes' position comumn wise*/
 	display: flex;
-	display: column;
+	flex-direction: row;
 	font-size: 30px;
 	text-align: center;
 }
@@ -87,10 +87,10 @@ footer{/*styling the footer*/
 	.intro{flex-direction:column;}
 	.intro1{ flex-direction: column;width:95%;}
 	.intro2{flex-direction: column; width:95%;}
-	.left1{width: 100%;order:1;padding:}
-	.right1{width: 100%;order:3;padding:}
-	.left2{width: 100%;order:2;padding:}
-	.right2{width: 100%;order:4;padding:}
+	.left1{width: 100%;order:1;padding:1px;}
+	.right1{width: 100%;order:3;padding:1px;}
+	.left2{width: 100%;order:2;padding:1px;}
+	.right2{width: 100%;order:4;padding:1px;}
 }
 
 
@@ -150,9 +150,5 @@ footer{/*styling the footer*/
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-}
-@media screen and (max-width: 450px){
-	.link1{width: 50%;order: 1;}
-	.link2{width: 50%;order:2;}
 }
 
